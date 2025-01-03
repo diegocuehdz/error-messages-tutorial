@@ -1,4 +1,11 @@
-const routingConfig = {
+interface IRouteConfig {
+  routes: {
+    path: string;
+    component: string;
+  }[];
+}
+
+const routingConfig: IRouteConfig = {
   routes: [
     {
       path: "home",

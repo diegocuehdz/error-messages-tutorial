@@ -7,5 +7,6 @@ const somethingDangerous = () => {
 try {
   somethingDangerous();
 } catch (error) {
+  if (!(error instanceof Error)) throw new Error("Unhandled");
   console.log(error.message);
 }
